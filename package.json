@@ -1,13 +1,14 @@
 {
   "name": "api-busca-registros",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "API de busca de registros",
   "author": "Pedro Marcelo <pedromarcelodesaalves@gmail.com>",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "release": "standard-version",
+    "commit": "git-cz",
     "postinstall": "husky install",
+    "release": "standard-version",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -20,8 +21,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json",
-    "prepare": "husky install"
+    "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
     "@nestjs/common": "^7.6.15",
@@ -43,6 +43,7 @@
     "@types/supertest": "^2.0.10",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
@@ -72,11 +73,6 @@
       ]
     }
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "jest": {
     "moduleFileExtensions": [
       "js",
@@ -93,5 +89,10 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
