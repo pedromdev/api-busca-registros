@@ -1,6 +1,6 @@
 {
   "name": "api-busca-registros",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "API de busca de registros",
   "author": "Pedro Marcelo <pedromarcelodesaalves@gmail.com>",
   "private": true,
