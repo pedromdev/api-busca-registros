@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
+import * as uniqueValidator from 'mongoose-unique-validator';
 import { EmailModule } from './email/email.module';
 
 @Module({
@@ -23,6 +24,10 @@ import { EmailModule } from './email/email.module';
           useNewUrlParser: true,
           useUnifiedTopology: true,
           authSource: 'admin',
+          connectionFactory: (connection) => {
+            connection.plugin(uniqueValidator);
+            return connection;
+          },
         };
       },
     }),
