@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/pedromdev/api-busca-registros/compare/v1.1.0...v1.2.0) (2021-06-07)
+
+
+### Features
+
+* adicionar endpoint de criação do registro ([9d73dc2](https://github.com/pedromdev/api-busca-registros/commit/9d73dc2dfaa1ed9ca5446d6084b08438cc73f8a4))
+
+
+### Bug Fixes
+
+* ativar flag useCreateIndex do MongoClient ([ae9c093](https://github.com/pedromdev/api-busca-registros/commit/ae9c09321394ad7055adec9743b2c1d31f0562bc))
+
 ## [1.1.0](https://github.com/pedromdev/api-busca-registros/compare/v1.0.2...v1.1.0) (2021-06-06)
 
 
