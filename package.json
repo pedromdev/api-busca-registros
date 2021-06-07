@@ -7,7 +7,6 @@
   "license": "UNLICENSED",
   "scripts": {
     "commit": "git-cz --allow-empty",
-    "postinstall": "husky install",
     "release": "standard-version",
     "prebuild": "rimraf dist",
     "build": "nest build",

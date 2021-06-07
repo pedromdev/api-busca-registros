@@ -1,5 +1,6 @@
 FROM node:12-alpine AS BUILD_IMAGE
 
+RUN apk add --no-cache curl bash
 RUN curl -sfL https://install.goreleaser.com/github.com/tj/node-prune.sh | bash -s -- -b /usr/local/bin
 
 WORKDIR /app
@@ -28,4 +29,4 @@ WORKDIR /app
 COPY --from=BUILD_IMAGE /app/dist ./dist
 COPY --from=BUILD_IMAGE /app/node_modules ./node_modules
 
-CMD ["node", "./dist/main.js"]
+CMD ["node", "./dist/src/main.js"]

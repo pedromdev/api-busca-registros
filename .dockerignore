@@ -1,0 +1,11 @@
+cdk
+.idea
+.husky
+docker-compose.yml
+Dockerfile
+Dockerfile-dev
+.gitignore
+.eslintrc.js
+.prettierrc
+README.md
+node_modules
