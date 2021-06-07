@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/pedromdev/api-busca-registros/compare/v1.2.0...v1.3.0) (2021-06-07)
+
+
+### Features
+
+* **docs:** adicionar respostas no endpoint de criação no swagger ([b608825](https://github.com/pedromdev/api-busca-registros/commit/b60882586d47cdff7d9818aadb20efe2a1fa2858))
+
 ## [1.2.0](https://github.com/pedromdev/api-busca-registros/compare/v1.1.0...v1.2.0) (2021-06-07)
 
 
