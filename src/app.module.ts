@@ -19,6 +19,7 @@ import { EmailModule } from './email/email.module';
       useFactory: (config: ConfigService) => {
         return {
           uri: config.get('DATABASE_URI'),
+          useCreateIndex: true,
           useNewUrlParser: true,
           useUnifiedTopology: true,
           authSource: 'admin',

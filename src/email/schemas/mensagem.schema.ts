@@ -3,7 +3,7 @@ import { SchemaFactory, Schema, Prop } from '@nestjs/mongoose';
 
 @Schema()
 export class Mensagem {
-  @Prop({})
+  @Prop({ unique: true })
   codigo: number;
 
   @Prop()
