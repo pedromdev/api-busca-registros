@@ -96,3 +96,7 @@ $ yarn cdk deploy ApiStack
 
 Ao finalizar a instalação, acesse a url http://&lt;subdomain&gt;.&lt;domain&gt;/docs de acordo com
 os parâmetros especificados.
+
+## Licença
+
+[MIT](LICENSE)

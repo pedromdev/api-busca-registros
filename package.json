@@ -4,7 +4,7 @@
   "description": "API de busca de registros",
   "author": "Pedro Marcelo <pedromarcelodesaalves@gmail.com>",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "commit": "git-cz --allow-empty",
     "release": "standard-version",
